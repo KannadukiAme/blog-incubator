@@ -1,5 +1,5 @@
 module.exports = {
-  title: '雨の箱庭', // Title for the site. This will be displayed in the navbar.
+  title: '雨の空', // Title for the site. This will be displayed in the navbar.
   base: '/',
   dest: './dist',
   head: [
@@ -7,6 +7,12 @@ module.exports = {
   ],
   themeConfig: {
     // Please keep looking down to see the available options.
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '文章', link: '/guide/' },
+      { text: '分类', link: 'https://google.com' },
+      { text: '关于', link: 'https://google.com' }
+    ]
   },
   markdown: {
     extendMarkdown: md => {
